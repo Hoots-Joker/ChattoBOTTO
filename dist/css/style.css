@@ -40,12 +40,41 @@ a:hover {
     color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.callToAction {
+    padding: .375rem 2.3rem;
+    border-radius: 60px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-padding {
+    padding: 100px 0px;
+}
+
+.section-heading h6 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
 /*
 ========================================================================================
 === HEADER                                                                           ===
 ========================================================================================
 */
 .navbar {
+    background-color: #FFF;
     padding: 1.5rem 1rem;
     transition: all 360ms;
 }
@@ -80,19 +109,6 @@ a:hover {
 
 .contact-link:hover {
     color: var(--color-primary);
-}
-
-.callToAction {
-    padding: .375rem 2.3rem;
-    border-radius: 60px;
-    background-color: var(--color-primary);
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.section-padding {
-    padding: 0px 100px;
 }
 
 /*
@@ -130,10 +146,6 @@ a:hover {
     vertical-align: top;
 }
 
-.hero h1 {
-    font-weight: bold;
-}
-
 .hero p {
     font-weight: 300;
 }
@@ -144,4 +156,22 @@ a:hover {
 
 .hero small {
     font-weight: 600;
+}
+
+/*
+========================================================================================
+=== ABOUT                                                                            ===
+========================================================================================
+*/
+
+.multi-heading h3 {
+    color: var(--color-secundary);
+}
+
+.multi-text p {
+    font-size: 14px;
+}
+
+.about-chatbot {
+    background-color: var(--bg);
 }
