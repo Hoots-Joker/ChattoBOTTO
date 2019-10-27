@@ -7,3 +7,77 @@
 @import 'bootstrap.css';
 /* Fonte */
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap');
+
+/*
+========================================================================================
+=== GLOBAL                                                                           ===
+========================================================================================
+*/
+
+:root {
+    /* Colors */
+    --color-primary: #F06E4E;
+    --color-secundary: #5BC2D9;
+    --helper-color: #00A689;
+    --bg: rgba(212, 239, 247, 0.8);
+    --text-primary: #001F24;
+
+    --font: 'Muli', sans-serif;
+}
+
+body,
+button,
+input,
+select {
+    font-family: var(--font);
+}
+
+body {
+    color: var(--text-primary);
+}
+
+a:hover {
+    color: inherit;
+}
+
+/*
+========================================================================================
+=== HEADER                                                                           ===
+========================================================================================
+*/
+.navbar {
+    padding: 1.5rem 1rem;
+}
+
+.navbar-brand {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.navbar-brand:hover {}
+
+.navbar-brand span {
+    color: var(--color-primary);
+}
+
+.nav-link {
+    /* font-size: .8rem; */
+    color: var(--text-primary);
+    /* text-transform: uppercase; */
+    font-weight: 600;
+}
+
+.contact-link {
+    color: var(--color-primary);
+}
+
+.contact-link:hover {
+    color: var(--color-primary);
+}
+
+.callToAction {
+    padding: .375rem 2.3rem;
+    border-radius: 60px;
+    background-color: var(--color-primary);
+    color: #fff;
+}
