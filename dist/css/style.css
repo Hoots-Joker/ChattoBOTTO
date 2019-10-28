@@ -21,6 +21,7 @@
     --helper-color: #00A689;
     --bg: rgba(212, 239, 247, 0.8);
     --text-primary: #001F24;
+    --box-shadow: rgba(0, 31, 36, 0.2);
 
     --font: 'Muli', sans-serif;
 }
@@ -34,6 +35,7 @@ select {
 
 body {
     color: var(--text-primary);
+    -webkit-font-smoothing: antialiased !important;
 }
 
 a:hover {
@@ -50,22 +52,47 @@ h6 {
 }
 
 .callToAction {
-    padding: .375rem 2.3rem;
+    padding: .500rem 2.8rem;
     border-radius: 60px;
     background-color: var(--color-primary);
     color: #fff;
     font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
+    transition: box-shadow 340ms;
+}
+
+.callToAction:hover {
+    box-shadow: 0px 6px 20px var(--box-shadow);
 }
 
 .section-padding {
-    padding: 100px 0px;
+    padding: 180px 0px;
 }
 
 .section-heading h6 {
     color: var(--color-primary);
     text-transform: uppercase;
     font-size: 14px;
+}
+
+.text-color {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.bg img {
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.cta-section {
+    padding: .6rem 2.8rem;
+}
+
+.bg-section {
+    background-color: var(--bg);
 }
 
 /*
@@ -80,10 +107,11 @@ h6 {
 }
 
 .navbar.scroll {
-    box-shadow: 0px 2px 5px rgba(0, 31, 36, 0.2);
+    box-shadow: 0px 2px 5px var(--box-shadow);
 }
 
 .navbar-brand {
+    font-size: 24px;
     user-select: none;
     color: var(--text-primary);
     font-weight: 600;
@@ -94,7 +122,7 @@ h6 {
 }
 
 .nav-link {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-primary);
     font-weight: 600;
     transition: color 560ms;
@@ -123,7 +151,7 @@ h6 {
 }
 
 .dollar {
-    padding: 8px 10px;
+    padding: 8px 10px 8px 0;
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -138,6 +166,7 @@ h6 {
 
 .dollar-text {
     margin: 2px 7px 0 0;
+    font-weight: 600;
 }
 
 .dollar-link>* {
@@ -149,10 +178,6 @@ h6 {
 
 .hero p {
     font-weight: 300;
-}
-
-.hero p span {
-    color: var(--color-primary);
 }
 
 .hero small {
@@ -173,6 +198,36 @@ h6 {
     font-size: 14px;
 }
 
-.about-chatbot {
-    background-color: var(--bg);
+/*
+========================================================================================
+=== SERVICES                                                                         ===
+========================================================================================
+*/
+
+.service-heading i {
+    font-size: 56px;
+    color: var(--color-secundary);
+}
+
+.service-text h5 {
+    font-size: 15px;
+}
+
+.service-text p {
+    font-size: 15px;
+}
+
+/*
+========================================================================================
+=== LIVES                                                                            ===
+========================================================================================
+*/
+
+.live-heading h3 {
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.live-text p {
+    font-size: 14px;
 }
