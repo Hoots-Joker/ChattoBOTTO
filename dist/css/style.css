@@ -95,6 +95,11 @@ h6 {
     background-color: var(--bg);
 }
 
+i {
+    font-size: 56px;
+    color: var(--color-secundary);
+}
+
 /*
 ========================================================================================
 === HEADER                                                                           ===
@@ -204,11 +209,6 @@ h6 {
 ========================================================================================
 */
 
-.service-heading i {
-    font-size: 56px;
-    color: var(--color-secundary);
-}
-
 .service-text h5 {
     font-size: 15px;
 }
@@ -230,4 +230,38 @@ h6 {
 
 .live-text p {
     font-size: 14px;
+}
+
+/*
+========================================================================================
+=== PLANS                                                                            ===
+========================================================================================
+*/
+.price-hover {
+    transition: box-shadow 560ms;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.price-hover:hover {
+    box-shadow: 0px 10px 50px var(--box-shadow);
+}
+
+.panel-plans i {
+    color: var(--color-primary);
+}
+
+.service-text h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-text p {
+    margin-bottom: 10px;
+}
+
+.price h2 {
+    color: var(--color-primary);
+    font-size: 28px;
 }
