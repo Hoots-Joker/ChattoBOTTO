@@ -1,0 +1,17 @@
+/* Services */
+.service-text h5 {
+    font-size: 15px;
+}
+
+.service-text p {
+    font-size: 15px;
+}
+
+.live-heading h3 {
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.live-text p {
+    font-size: 14px;
+}

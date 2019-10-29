@@ -1,0 +1,15 @@
+/* Variáveis */
+:root {
+    /* Colors */
+    --color-primary: #F06E4E;
+    --color-secundary: #5BC2D9;
+    --helper-color: #00A689;
+    --bg: rgba(212, 239, 247, 0.8);
+    --border-nav: rgba(212, 239, 247, 0.4);
+    --text-primary: #001F24;
+    --box-shadow: rgba(0, 31, 36, 0.2);
+    --span: rgba(0, 31, 36, 0.5);
+
+    /* Fonte */
+    --font: 'Muli', sans-serif;
+}

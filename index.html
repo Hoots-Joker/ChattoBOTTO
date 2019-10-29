@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>ChattoBOTTO</title>
+    <title>ChatoBOTTO</title>
 
     <!-- CDN Icones -->
     <script src="https://kit.fontawesome.com/12705e95f9.js" crossorigin="anonymous"></script>
@@ -15,70 +15,65 @@
 </head>
 
 <body>
-    <!-- ### HEADER -->
-    <header class="header" id="header">
-        <!-- ### Header Wrapper -->
-        <div class="header-wapper">
-            <!-- ### Navbar -->
-            <nav class="navbar navbar-expand-md fixed-top">
-                <!-- ### Navbar Container -->
-                <div class="container">
-                    <!-- ### Logo -->
-                    <a href="index.html" class="navbar-brand">
-                        Chatto<span>BOTTO</span>
-                    </a>
-                    <!-- ### End Logo -->
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fixed-top py-2 py-lg-3">
+            <!-- Navbar Container -->
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    Chatto<span>Botto</span>
+                </a>
 
-                    <!-- ### Mobile Button -->
-                    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
-                        data-target="#menu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- ### End Mobile Button -->
+                <!-- Hamburger Button -->
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /Hamburger Button -->
 
-                    <!-- ### Menu -->
-                    <div class="collapse navbar-collapse" id="menu">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="#hero" class="nav-link">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#services" class="nav-link">Serviços</a>
-                            </li>
-                            <li class="nav-item m-0 mr-lg-5">
-                                <a href="#plans" class="nav-link">Planos</a>
-                            </li>
-                            <li class="nav-item mt-2 mt-md-0">
-                                <a href="#contact" class="nav-link contact-link">Contato</a>
-                            </li>
-                            <li class="nav-item m-0 ml-lg-3">
-                                <button class="btn callToAction" type="button">Login</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- ### End Menu -->
+                <!-- Menu -->
+                <div class="collapse navbar-collapse py-xs-3" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Planos</a>
+                        </li>
+                        <li class="nav-item mr-0 mr-lg-5">
+                            <a href="#plans" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item mt-2 mt-md-0">
+                            <a href="#contact" class="nav-link link-contato">Registre-se</a>
+                        </li>
+                        <li class="nav-item m-0 ml-lg-3">
+                            <button class="btn btn-customize px-4" type="button">Login</button>
+                        </li>
+                    </ul>
                 </div>
-                <!-- ### End Navbar Container -->
-            </nav>
-            <!-- ### End Navbar -->
+                <!-- / Menu -->
+        </nav>
+        <!-- /Navbar -->
         </div>
-        <!-- ### End Header Wrapper -->
+        <!-- /Header Content -->
     </header>
-    <!-- ### End HEADER -->
+    <!-- / Header -->
 
-    <!-- ### Main -->
-    <main id="main">
-        <!-- ### Section Hero -->
-        <section class="hero" id="hero">
-            <!-- ### Container -->
-            <div class="container h-100">
-                <!-- ### Row -->
-                <div class="row align-items-center justify-content-center h-100">
-                    <!-- ### Col One -->
-                    <div class="col-12 col-md-6 col-lg-6">
+    <!-- Main -->
+    <main>
+        <!-- Home -->
+        <section class="section-padding home-padding text-center text-md-left home" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Column Text -->
+                    <div class="col-12 col-md-5 col-lg-5">
+                        <!-- Dollar Span -->
                         <div class="dollar">
                             <div class="dollar-link">
                                 <span class="dollar-icon">
@@ -89,68 +84,71 @@
                                 </span>
                             </div>
                         </div>
-                        <h1 class="mt-0 mt-md-2">Automatize o Atendimento</h1>
-                        <p>
+                        <!-- / Dollar Span -->
+
+                        <!-- Text -->
+                        <h1 class="mt-0 mt-md-2">
+                            Automatize o Atendimento
+                        </h1>
+                        <p class="paragraph paragraph-home">
                             Globalbot é uma solução de atendimento a clientes com
-                            <span class="text-color">inteligência artificial</span> que combina chatbots (assistentes
+                            <span class="paragraph-span-color">inteligência artificial</span> que combina chatbots
+                            (assistentes
                             virtuais) com atendimento humano em diversos canais.
                         </p>
-                        <div class="cta-hero mt-2 mt-md-5">
-                            <button class="btn callToAction cta-section" type="button">Teste grátis por 7 dias</button>
+                        <div class="btn-home mt-2 mt-md-5">
+                            <button class="btn btn-customize btn-lg px-4 px-md-5" type="button">Teste grátis por 7
+                                dias</button>
                         </div>
-                        <small class="text-muted">(Não é nescessário cartão de credito)</small>
+                        <small class="text-muted">(Não é nescessário cartão de crédito)</small>
+                        <!-- / Text -->
                     </div>
-                    <!-- ### End Col One -->
-                    <!-- ### Col Two -->
-                    <div class="col-md-6 col-lg-6 d-none d-md-block">
-                        <div class="hero-bg">
-                            <img src="./images/hero.svg" alt="Hero Image" class="img-fluid">
-                        </div>
-                    </div>
-                    <!-- ### End Col Two -->
-                </div>
-                <!-- ### Row -->
-            </div>
-            <!-- ### End Container -->
-        </section>
-        <!-- ### End Section Hero -->
+                    <!-- / Column Text -->
 
-        <!-- ### Section About -->
-        <div id="about">
-            <!-- ### About 1 -->
-            <section class="section-padding about-multi-channel">
-                <!-- ### Container -->
+                    <!-- Column Image -->
+                    <div class="col-12 col-md-7 col-lg-7 pt-5 pt-md-0">
+                        <!-- Image -->
+                        <img src="./images/hero.svg" alt="Home Image" class="img-fluid">
+                    </div>
+                    <!-- / Column Image -->
+                </div>
+            </div>
+        </section>
+        <!-- / Home -->
+
+        <!-- About -->
+        <section class="about text-center text-md-left" id="about">
+            <!-- Section One -->
+            <div class="multi-channel section-padding">
                 <div class="container">
-                    <!-- ### Row -->
                     <div class="row align-items-center">
-                        <!-- ### Column 1 -->
+                        <!-- Column Text -->
                         <div class="col-12 col-md-7 col-lg-7 order-0 order-md-1">
-                            <!-- ### Heading -->
+                            <!-- Heading -->
                             <div class="section-heading">
-                                <h6>Multi-Canal</h6>
+                                <h4>Multi-Canal</h4>
                                 <h2>
                                     No site, WhatsApp ou Facebook. <br class="d-none d-md-block">
                                     Atenda onde seu cliente está.
                                 </h2>
                                 <p>
-                                    Surpreenda seus clientes com uma nova experiência. Um robô de atendimento que
-                                    parece
-                                    humano. Sempre disponível!
+                                    Surpreenda seus clientes com uma nova experiência.
+                                    <span class="paragraph-span-color">Um robô de atendimento</span> que parece humano.
+                                    Sempre disponível!
                                 </p>
                             </div>
-                            <!-- ### End Heading -->
+                            <!-- / Heading -->
 
-                            <!-- ### Content -->
-                            <div class="multi-content">
-                                <!-- ### Row -->
+                            <!-- Content -->
+                            <div class="multi-channel-content">
                                 <div class="row">
-                                    <!-- ### Column 1 -->
+                                    <!-- Column -->
                                     <div class="col-12 col-md-4">
-                                        <div class="multi-panel">
-                                            <div class="multi-heading">
+                                        <div class="channel-panel">
+                                            <div class="channel-heading">
                                                 <h3>+50%</h3>
                                             </div>
-                                            <div class="multi-text">
+                                            <div class="channel-text">
                                                 <p class="text-muted">
                                                     Dos atendimentos comuns
                                                     podem ser automatizados.
@@ -158,15 +156,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ### End Column 1 -->
+                                    <!-- / Column -->
 
-                                    <!-- ### Column 2 -->
+                                    <!-- Column -->
                                     <div class="col-12 col-md-4">
-                                        <div class="multi-panel">
-                                            <div class="multi-heading">
+                                        <div class="channel-panel">
+                                            <div class="channel-heading">
                                                 <h3>24h</h3>
                                             </div>
-                                            <div class="multi-text">
+                                            <div class="channel-text">
                                                 <p class="text-muted">
                                                     Chatbot nos canais digitais,
                                                     sem fila de espera
@@ -174,15 +172,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ### End Column 2 -->
+                                    <!-- / Column -->
 
-                                    <!-- ### Column 3 -->
+                                    <!-- Column -->
                                     <div class="col-12 col-md-4">
-                                        <div class="multi-panel">
-                                            <div class="multi-heading">
+                                        <div class="channel-panel">
+                                            <div class="channel-heading">
                                                 <h3>10x</h3>
                                             </div>
-                                            <div class="multi-text">
+                                            <div class="channel-text">
                                                 <p class="text-muted">
                                                     Mais veloz na resolução dos
                                                     atendimentos.
@@ -190,32 +188,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ### End Column 3 -->
+                                    <!-- / Column -->
                                 </div>
-                                <!-- ### End Row -->
                             </div>
-                            <!-- ### End Content -->
+                            <!-- / Content -->
                         </div>
-                        <!-- ### End Column 1 -->
+                        <!-- / Column Text -->
+
+                        <!-- Column Image -->
                         <div class="col-12 col-md-5 col-lg-5 order-1 order-md-0 mt-5 mt-md-0">
-                            <div class="bg-about-multi-channel bg">
+                            <div class="channel-image bg-image">
                                 <img src="./images/about_1.svg" alt="About Image 1" class="img-fluid">
                             </div>
                         </div>
+                        <!-- / Column Image -->
                     </div>
-                    <!-- ### Row -->
                 </div>
-                <!-- ### End Container -->
-            </section>
-            <!-- ### End About 1 -->
+            </div>
+            <!-- / Section One -->
 
-            <!-- ### About 2 -->
-            <section class="section-padding about-chatbot bg-section">
-                <!-- ### Container -->
+            <!-- Section Two -->
+            <div class="section-padding chatbot bg-section">
                 <div class="container">
-                    <!-- ### Row -->
                     <div class="row align-items-center">
-                        <!-- ### Column 1 -->
+                        <!-- Column Text -->
                         <div class="col-12 col-md-7 col-lg-7">
                             <div class="section-heading">
                                 <h2>
@@ -224,60 +220,63 @@
                                     mais previsibilidade.
                                 </h2>
                                 <p>
-                                    Solução integrada ao site, aplicativo, WhatsApp e Facebook. Seu cliente escolhe o
-                                    canal e sua empresa pode atendê-lo 24h por dia nos 7 dias da semana.
+                                    Solução integrada ao site, aplicativo, WhatsApp e Facebook.
+                                    <span class="paragraph-span-color">Seu cliente escolhe o canal</span>
+                                    e sua empresa pode atendê-lo 24h por dia nos 7 dias da semana.
                                 </p>
                             </div>
-                            <button class="btn callToAction mt-0 mt-md-4 cta-section" type="button">Comece Agora <i
-                                    class="fas fa-arrow-right"></i></button>
+                            <div class="btn-about">
+                                <button class="btn btn-lg btn-customize mt-0 mt-md-4 px-4 px-md-5">
+                                    Comece Agora
+                                    <i class="fas fa-arrow-right pl-1"></i>
+                                </button>
+                            </div>
                         </div>
-                        <!-- ### End Column 1 -->
+                        <!-- / Column Text -->
 
-                        <!-- ### Column 2 -->
+                        <!-- Column Image -->
                         <div class="col-12 col-md-5 col-lg-5 mt-5 mt-md-0">
-                            <div class="bg-chatbot bg">
+                            <div class="chatbot-image bg-image">
                                 <img src="./images/about_2.svg" alt="About Image 2" class="img-fluid">
                             </div>
                         </div>
-                        <!-- ### End Column 2 -->
+                        <!-- / Column Image -->
                     </div>
-                    <!-- ### End Row -->
                 </div>
-                <!-- ### End Container -->
-            </section>
-            <!-- ### End About 2 -->
-        </div>
-        <!-- ### End Section About -->
+            </div>
+            <!-- / Section Two -->
+        </section>
+        <!-- / About -->
 
-        <div class="services" id="services">
-            <!-- ### Section Services -->
-            <section class="services section-padding text-left text-md-center">
-                <!-- ### Container -->
+        <!-- Services -->
+        <section class="services" id="services">
+            <!-- Section One -->
+            <div class="section-padding text-center">
                 <div class="container">
-                    <!-- ### Heading -->
+                    <!-- Heading -->
                     <div class="section-heading">
-                        <h6>NOSSOS SERVIÇOS</h6>
+                        <h4>Nossos Serviços</h4>
                         <h2>
                             Uma nova era no relacionamento
                             com os clientes.
                         </h2>
                         <p>
-                            Seus clientes se comunicam em linguagem natural. O ChattoBOTTO é um <br
-                                class="d-none d-md-block">
-                            chatbot com Inteligência Artificial para compreender e atender as necessidades <br
-                                class="d-none d-md-block">
+                            Seus clientes se comunicam em linguagem natural. O ChattoBOTTO é um
+                            <br class="d-none d-md-block">
+                            chatbot com Inteligência Artificial para compreender e atender as necessidades
+                            <br class="d-none d-md-block">
                             dos clientes em tempo real, identificando suas intenções.
                         </p>
                     </div>
-                    <!-- ### End Heading -->
+                    <!-- / Heading -->
 
-                    <!-- ### Row 1 -->
+                    <!-- Row One -->
                     <div class="row mt-5 pt-5">
-                        <!-- ### Column 1 -->
-                        <div class="col-12 col-md-4">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 col-lg-4">
                             <div class="panel-services">
                                 <div class="service-heading mb-3">
-                                    <i class="fas fa-users-cog icon-panel"></i>
+                                    <i class="fas fa-users-cog icon-heading"></i>
                                 </div>
                                 <div class="service-text">
                                     <h5>Processamento de Linguagem Natural (PLN)</h5>
@@ -285,13 +284,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ### End Column 1 -->
+                        <!-- / Column -->
 
-                        <!-- ### Column 2 -->
-                        <div class="col-12 col-md-4">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 col-lg-4">
                             <div class="panel-services">
                                 <div class="service-heading mb-3">
-                                    <i class="fab fa-accusoft icon-panel"></i>
+                                    <i class="fab fa-accusoft icon-heading"></i>
                                 </div>
                                 <div class="service-text">
                                     <h5>Aprendizado Constante</h5>
@@ -299,33 +298,32 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ### End Column 2 -->
+                        <!-- / Column -->
 
-                        <!-- ### Column 3 -->
-                        <div class="col-12 col-md-4">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 col-lg-4">
                             <div class="panel-services">
                                 <div class="service-heading mb-3">
-                                    <i class="fab fa-hubspot icon-panel"></i>
+                                    <i class="fab fa-hubspot icon-heading"></i>
                                 </div>
                                 <div class="service-text">
                                     <h5>Conhecimento Compartilhado</h5>
                                     <p class="text-muted">As perguntas e repostas do chatbot são compartilhadas e
-                                        auxiliam
-                                        os agentes.</p>
+                                        auxiliam os agentes.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- ### End Column 3 -->
+                        <!-- / Column -->
                     </div>
-                    <!-- ### End Row 1 -->
+                    <!-- / Row One -->
 
-                    <!-- ### Row 2 -->
+                    <!-- Row Two -->
                     <div class="row mt-5">
-                        <!-- ### Column 4 -->
-                        <div class="col-12 col-md-4">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 col-lg-4">
                             <div class="panel-services">
                                 <div class="service-heading mb-3">
-                                    <i class="fas fa-tasks icon-panel"></i>
+                                    <i class="fas fa-tasks icon-heading"></i>
                                 </div>
                                 <div class="service-text">
                                     <h5>Análise dos Atendimentos</h5>
@@ -334,13 +332,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ### End Column 4 -->
+                        <!-- / Column -->
 
-                        <!-- ### Column 5 -->
-                        <div class="col-12 col-md-4">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 col-lg-4">
                             <div class="panel-services">
                                 <div class="service-heading mb-3">
-                                    <i class="fas fa-star icon-panel"></i>
+                                    <i class="fas fa-star icon-heading"></i>
                                 </div>
                                 <div class="service-text">
                                     <h5>Pesquisas de Satisfação</h5>
@@ -349,13 +347,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ### End Column 5 -->
+                        <!-- / Column -->
 
-                        <!-- ### Column 6 -->
-                        <div class="col-12 col-md-4">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 col-lg-4">
                             <div class="panel-services">
                                 <div class="service-heading mb-3">
-                                    <i class="fas fa-bell icon-panel"></i>
+                                    <i class="fas fa-bell icon-heading"></i>
                                 </div>
                                 <div class="service-text">
                                     <h5>Notificações e Alertas</h5>
@@ -364,43 +362,40 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ### End Column 6 -->
+                        <!-- / Column -->
                     </div>
-                    <!-- ### End Row 2 -->
+                    <!-- / Row Two -->
                 </div>
-                <!-- ### End Container -->
-            </section>
-            <!-- ### End Section Services -->
+            </div>
+            <!-- / Section One -->
 
-            <!-- ### Section Live -->
-            <section class="live section-padding bg-section">
-                <!-- ### Container -->
+            <!-- Section Two -->
+            <section class="section-padding bg-section text-center text-md-left">
                 <div class="container">
-                    <!-- ### Row -->
                     <div class="row align-items-center">
-                        <!-- ### Column 1 -->
+                        <!-- Column Text -->
                         <div class="col-12 col-md-7 col-lg-7 order-1 mt-5 mt-md-0">
-                            <!-- ### Heading -->
+                            <!-- Heading -->
                             <div class="section-heading">
-                                <h6>CHAT AO VIVO</h6>
+                                <h4>Chat Ao Vivo</h4>
                                 <h2>
                                     Enriqueça seu atendimento <br class="d-none d-md-block">
                                     com o contato humano.
                                 </h2>
                                 <p>
                                     Os chatbots qualificam os interesses dos clientes e realizam os atendimentos
-                                    corriqueiros, otimizando o tempo da sua equipe. Quando necessário o chatbot pode
+                                    corriqueiros, <span class="paragraph-span-color">otimizando o tempo</span> da sua
+                                    equipe. Quando necessário o chatbot pode
                                     transferir a conversa para um humano possibilitando ao atendente seguir com o
                                     atendimento.
                                 </p>
                             </div>
-                            <!-- ### End Heading -->
+                            <!-- / Heading -->
 
-                            <!-- ### Content -->
+                            <!-- Content -->
                             <div class="live-content">
-                                <!-- ### Row -->
                                 <div class="row">
-                                    <!-- ### Column 1 -->
+                                    <!-- Column -->
                                     <div class="col-12 col-md-4">
                                         <div class="live-panel">
                                             <div class="live-heading">
@@ -408,78 +403,70 @@
                                             </div>
                                             <div class="live-text">
                                                 <p class="text-muted">
-                                                    Todos os canais de
-                                                    atendimento em um
-                                                    único lugar.
+                                                    Todos os canais de atendimento em um único lugar.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ### End Column 1 -->
+                                    <!-- / Column -->
 
-                                    <!-- ### Column 2 -->
+                                    <!-- Column -->
                                     <div class="col-12 col-md-4">
                                         <div class="live-panel">
                                             <div class="live-heading">
-                                                <h3>Posições de
-                                                    Atendimento</h3>
+                                                <h3>Posições de Atendimento</h3>
                                             </div>
                                             <div class="live-text">
                                                 <p class="text-muted">
-                                                    Gerenciamento dos
-                                                    atendimentos para
-                                                    os agentes.
+                                                    Gerenciamento dos atendimentos para os agentes.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ### End Column 2 -->
+                                    <!-- / Column -->
 
-                                    <!-- ### Column 3 -->
+                                    <!-- Column -->
                                     <div class="col-12 col-md-4">
                                         <div class="live-panel">
                                             <div class="live-heading">
-                                                <h3>Apoio aos
-                                                    Atendentes</h3>
+                                                <h3>Apoio aos Atendentes</h3>
                                             </div>
                                             <div class="live-text">
                                                 <p class="text-muted">
-                                                    A Inteligência Artificial
-                                                    monitora as conversas,
-                                                    auxiliando sua equipe nas
-                                                    respostas.
+                                                    A Inteligência Artificial monitora as conversas, auxiliando sua
+                                                    equipe
+                                                    nas respostas.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ### End Column 3 -->
+                                    <!-- / Column -->
                                 </div>
-                                <!-- ### End Row -->
                             </div>
-                            <!-- ### End Content -->
+                            <!-- / Content -->
                         </div>
-                        <!-- ### End Column 1 -->
+                        <!-- / Column Text -->
+
+                        <!-- Column Image -->
                         <div class="col-12 col-md-5 col-lg-5 order-0">
-                            <div class="bg-live bg">
+                            <div class="live-image bg-image">
                                 <img src="./images/chat.svg" alt="Chat Image" class="img-fluid">
                             </div>
                         </div>
+                        <!-- / Column Image -->
                     </div>
-                    <!-- ### Row -->
                 </div>
-                <!-- ### End Container -->
             </section>
-            <!-- ### End Section Live -->
-        </div>
-        <!-- ### End Services -->
+            <!-- / Section Two -->
+        </section>
+        <!-- / Services -->
 
-        <!-- ### Section Plans -->
-        <section class="plans section-padding text-left text-md-center" id="plans">
-            <!-- ### Container -->
+        <!-- Plans -->
+        <section class="plans section-padding text-center" id="plans">
             <div class="container">
-                <!-- ### Heading -->
+                <!-- Heading -->
                 <div class="section-heading">
-                    <h6>Nossos Planos</h6>
+                    <h4>Nossos Planos</h4>
                     <h2>
                         Comece Agora
                     </h2>
@@ -487,154 +474,130 @@
                         Escolha um plano e melhore as interações com seu cliente independente do canal.
                     </p>
                 </div>
-                <!-- ### End Heading -->
+                <!-- / Heading -->
 
-                <!-- ### Row -->
-                <div class="row mt-5 pt-5">
-                    <!-- ### Column 1 -->
-                    <div class="col-12 col-md-4 price-hover">
-                        <div class="panel-plans">
-                            <div class="panel-plans mb-3">
-                                <i class="fas fa-car-side icon-panel"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Professional</h3>
-                                <p class="text-muted">Inteligência Artificial</p>
-                                <p class="text-muted">Chat ao Vivo</p>
-                                <p class="text-muted">Relatórios Avançados</p>
-                                <p class="text-muted">Omnicanal</p>
-                                <p class="text-muted">e muito mais!</p>
-                            </div>
-                            <div class="price mt-5">
-                                <h2>R$ 149/ Mês</h2>
-                            </div>
-                            <div class="service-button">
-                                <button class="btn callToAction cta-section" type="button">Teste grátis por 7
-                                    dias</button>
+                <!-- Content -->
+                <div class="plans-content">
+                    <div class="row mt-5 pt-5">
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 price-hover">
+                            <div class="panel-plans">
+                                <div class="panel-plans mb-3">
+                                    <i class="fas fa-car-side icon-heading"></i>
+                                </div>
+                                <div class="plans-text">
+                                    <h3>Professional</h3>
+                                    <p class="text-muted">Inteligência Artificial</p>
+                                    <p class="text-muted">Chat ao Vivo</p>
+                                    <p class="text-muted">Relatórios Avançados</p>
+                                    <p class="text-muted">Omnicanal</p>
+                                    <p class="text-muted">e muito mais!</p>
+                                </div>
+                                <div class="price mt-5">
+                                    <h2>R$ 149/ Mês</h2>
+                                </div>
+                                <div class="plans-button">
+                                    <button class="btn btn-customize px-4 px-md-5" type="button">Comece Já</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- ### End Column 1 -->
+                        <!-- / Column -->
 
-                    <!-- ### Column 2 -->
-                    <div class="col-12 col-md-4 price-hover">
-                        <div class="panel-plans">
-                            <div class="panel-plans mb-3">
-                                <i class="fas fa-plane icon-panel"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Advanced</h3>
-                                <p class="text-muted"><strong>Tudo do Plano Professional +</strong></p>
-                                <p class="text-muted">Alto Volume de Chats</p>
-                                <p class="text-muted">Real Time</p>
-                                <p class="text-muted">Multi-idioma</p>
-                                <p class="text-muted">e muito mais!</p>
-                            </div>
-                            <div class="price mt-5">
-                                <h2>R$ 189/ Mês</h2>
-                            </div>
-                            <div class="service-button">
-                                <button class="btn callToAction cta-section" type="button">Teste grátis por 7
-                                    dias</button>
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 price-hover">
+                            <div class="panel-plans">
+                                <div class="panel-plans mb-3">
+                                    <i class="fas fa-plane icon-heading"></i>
+                                </div>
+                                <div class="plans-text">
+                                    <h3>Advanced</h3>
+                                    <p class="text-muted"><strong>Tudo do Plano Professional +</strong></p>
+                                    <p class="text-muted">Alto Volume de Chats</p>
+                                    <p class="text-muted">Real Time</p>
+                                    <p class="text-muted">Multi-idioma</p>
+                                    <p class="text-muted">e muito mais!</p>
+                                </div>
+                                <div class="price mt-5">
+                                    <h2>R$ 189/ Mês</h2>
+                                </div>
+                                <div class="plans-button">
+                                    <button class="btn btn-customize px-4 px-md-5" type="button">Comece Já</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- ### End Column 2 -->
+                        <!-- / Column -->
 
-                    <!-- ### Column 3 -->
-                    <div class="col-12 col-md-4 price-hover">
-                        <div class="panel-plans">
-                            <div class="panel-plans mb-3">
-                                <i class="fas fa-space-shuttle icon-panel"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Enterprise</h3>
-                                <p class="text-muted"><strong>Tudo do Plano Advanced +</strong></p>
-                                <p class="text-muted">Integrações Avançadas</p>
-                                <p class="text-muted">Negociações Especiais</p>
-                                <p class="text-muted">Atendimento Premium</p>
-                                <p class="text-muted">e muito mais!</p>
-                            </div>
-                            <div class="price mt-5">
-                                <h2>R$ 479/ Mês</h2>
-                            </div>
-                            <div class="service-button">
-                                <button class="btn callToAction cta-section" type="button">Teste grátis por 7
-                                    dias</button>
+                        <!-- Column -->
+                        <div class="col-12 col-md-4 price-hover">
+                            <div class="panel-plans">
+                                <div class="panel-plans mb-3">
+                                    <i class="fas fa-space-shuttle icon-heading"></i>
+                                </div>
+                                <div class="plans-text">
+                                    <h3>Enterprise</h3>
+                                    <p class="text-muted"><strong>Tudo do Plano Advanced +</strong></p>
+                                    <p class="text-muted">Integrações Avançadas</p>
+                                    <p class="text-muted">Negociações Especiais</p>
+                                    <p class="text-muted">Atendimento Premium</p>
+                                    <p class="text-muted">e muito mais!</p>
+                                </div>
+                                <div class="price mt-5">
+                                    <h2>R$ 479/ Mês</h2>
+                                </div>
+                                <div class="plans-button">
+                                    <button class="btn btn-customize px-4 px-md-5" type="button">Comece Já</button>
+                                </div>
                             </div>
                         </div>
+                        <!-- / Column -->
                     </div>
-                    <!-- ### End Column 3 -->
                 </div>
-                <!-- ### End Row -->
+                <!-- / Content -->
             </div>
-            <!-- ### End Container -->
         </section>
-        <!-- ### End Section Plans -->
+        <!-- / Plans -->
 
-        <!-- ### Section Cantact -->
+        <!-- Contact -->
         <section class="contact section-padding bg-section" id="contact">
-            <!-- ### Container -->
             <div class="container">
-                <!-- ### Row -->
                 <div class="row">
-                    <!-- ### Column 1 -->
+                    <!-- Column Form -->
                     <div class="col-12 col-md-6 order-1 order-md-0 pt-5 pt-md-0">
-                        <!-- ### Form -->
                         <form>
-                            <!-- ### Input 1 -->
                             <div class="form-group">
                                 <label for="name">Nome *</label>
                                 <input type="text" id="name" name="name" class="form-control"
                                     placeholder="Insira o seu nome...">
                             </div>
-                            <!-- ### End Input 1 -->
 
-                            <!-- ### Input 2 -->
                             <div class="form-group">
                                 <label for="email">E-mail *</label>
                                 <input type="email" id="email" name="email" class="form-control"
                                     placeholder="Insira o seu e-mail...">
                             </div>
-                            <!-- ### End Input 2 -->
 
-                            <!-- ### Input 3 -->
-                            <!-- <div class="form-group">
-                                <label for="phone">Telefone *</label>
-                                <input type="text" id="phone" name="phone" class="form-control"
-                                    placeholder="Insira o seu telefone...">
-                            </div> -->
-                            <!-- ### End Input 3 -->
-
-                            <!-- ### Input 4 -->
                             <div class="form-group">
                                 <label for="subject">Assunto *</label>
                                 <input type="text" id="subject" name="subject" class="form-control"
                                     placeholder="Insira o assunto...">
                             </div>
-                            <!-- ### End Input 4 -->
 
-                            <!-- ### Input 5 -->
                             <div class="form-group">
                                 <label for="message">Mensagem *</label>
                                 <textarea name="message" id="message" cols="30" rows="5 " class="form-control"
                                     placeholder="Instira a mensagem..."></textarea>
                             </div>
-                            <!-- ### End Input 5 -->
 
-                            <!-- ### Submit -->
-                            <input type="submit" class="btn callToAction cta-section" value="Enviar">
-                            <!-- ### End Submit -->
+                            <input type="submit" class="btn btn-customize px-4 px-md-5" value="Enviar">
                         </form>
-                        <!-- ### Form -->
                     </div>
-                    <!-- ### End Column 1 -->
+                    <!-- / Column Form -->
 
-                    <!-- ### Column 2 -->
-                    <div class="col-12 col-md-6 order-1 order-md-0 pt-0 pt-md-5">
-                        <!-- ### Heading -->
+                    <!-- Column Text -->
+                    <div class="col-12 col-md-6 order-0 order-md-1 pt-0 pt-md-5 text-center text-md-left">
+                        <!-- Heading -->
                         <div class="section-heading">
-                            <h6>Contato</h6>
+                            <h4>Contato</h4>
                             <h2>
                                 Nos envie sua mensagem
                             </h2>
@@ -643,66 +606,63 @@
                                 sugestões. Caso prefira, entre em contato pelo telefone
                             </p>
                         </div>
+                        <!-- / Heading -->
                         <div class="contact-pragraph">
-                            <p class="text-muted">Email - chattobotto@email.com</p>
                             <p class="text-muted">Comercial - (17) 3321-6411</p>
                             <p class="text-muted">WhatsApp - SP (17) 99135-8828</p>
-                            <p class="text-muted">Endereço - Av. Prof. Roberto Frade Monte, 389 - Aeroporto, Barretos -
-                                SP <br> CEP - 14783-226
+                            <p class="text-muted">
+                                Endereço - Av. Prof. Roberto Frade Monte, 389 - Aeroporto, Barretos - SP <br> CEP -
+                                14783-226
+                            </p>
+                            <p class="text-muted">Email - chattobotto@email.com</p>
                         </div>
-                        <!-- ### End Heading -->
                     </div>
-                    <!-- ### End Column 2 -->
+                    <!-- / Column Text -->
                 </div>
-                <!-- ### End Row -->
             </div>
-            <!-- ### End Container -->
         </section>
-        <!-- ### End Section Contatc -->
+        <!-- / Contact -->
 
-        <!-- ### Newsletter -->
-        <section class="newsletter pb-5 bg-section" id="newsletter">
-            <!-- ### Heading -->
-            <div class="section-heading text-left text-md-center">
-                <h2>
-                    Assine nossa Newsletter
-                </h2>
-                <p>
-                    Com ela você fica sabendo das nossas novidades e descobre descontos exclusivos
-                </p>
-            </div>
-            <!-- ### End Heading -->
+        <!-- Newsletter -->
+        <section class="newsletter pb-5 pt-2 bg-section" id="newsletter">
+            <div class="container">
+                <!-- Heading -->
+                <div class="section-heading text-center">
+                    <h2>
+                        Assine nossa Newsletter
+                    </h2>
+                    <p>
+                        Com ela você fica sabendo das nossas novidades e descobre descontos exclusivos
+                    </p>
+                </div>
+                <!-- / Heading -->
 
-            <!-- ### Form -->
-            <form class="mt-4">
-                <div class="input-group">
-                    <input type="email" placeholder="Email..." class="form-control">
-                    <div class="input-group-append">
-                        <button class="btn callToAction cta-newsletter">Enviar</button>
+                <!-- Form -->
+                <form class="mt-4">
+                    <div class="input-group">
+                        <input type="email" placeholder="Email..." class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-customize btn-lg px-4">Enviar</button>
+                        </div>
                     </div>
-                </div>
-            </form>
-            <!-- ### End Form -->
+                </form>
+                <!-- / Form -->
+            </div>
         </section>
-        <!-- ### End Newsletter -->
+        <!-- / Newsletter -->
     </main>
-    <!-- ### End Main -->
+    <!-- / Main -->
 
-    <!-- ### Footer -->
+    <!-- Footer -->
     <footer class="footer py-3" id="footer">
-        <!-- ### Container -->
         <div class="container">
-            <!-- ### Logo -->
             <a href="index.html" class="navbar-brand">
                 Chatto<span>BOTTO</span>
             </a>
-            <!-- ### End Logo -->
             <p>ChattoBOTTO &copy;. Todos os direitos reservados </p>
         </div>
-        <!-- ### End Container -->
     </footer>
-    <!-- ### End Footer -->
-
+    <!-- / Footer -->
 
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/popper.min.js"></script>

@@ -1,0 +1,8 @@
+/* About */
+.channel-heading h3 {
+    color: var(--color-secundary);
+}
+
+.channel-text p {
+    font-size: 14px;
+}

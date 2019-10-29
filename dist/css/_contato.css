@@ -1,0 +1,29 @@
+/* Contact */
+.contact-pragraph p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.newsletter h2 {
+    font-weight: 400;
+}
+
+.newsletter form {
+    max-width: 100%;
+    width: 480px;
+    display: block;
+    margin: 0 auto;
+}
+
+.newsletter .form-control {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid var(--color-primary);
+    padding-left: 25px;
+}

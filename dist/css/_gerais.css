@@ -1,0 +1,101 @@
+/* Estilos Gerias */
+
+body,
+button,
+input,
+select {
+    font-family: var(--font);
+}
+
+body {
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+i.icon-heading {
+    font-size: 52px;
+    color: var(--color-secundary);
+}
+
+a:hover {
+    color: inherit;
+}
+
+.text-muted {
+    color: var(--span);
+}
+
+.paragraph-span-color {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.section-heading h4 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Links */
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--text-primary);
+    transition: color 560ms;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Btns */
+.btn-customize {
+    background-color: var(--color-primary);
+    color: #FFF;
+    font-weight: 600;
+    transition: all 560ms;
+    font-size: 14px;
+}
+
+.btn-customize:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--text-primary);
+}
+
+/* Paddings */
+.section-padding {
+    padding: 100px 0;
+}
+
+.home-padding {
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    .home-padding {
+        padding-top: 130px;
+    }
+}
+
+/* Images */
+.bg-image img {
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Backgrounds */
+.bg-section {
+    background-color: var(--bg);
+}
