@@ -2,19 +2,266 @@
 @import './bootstrap/bootstrap.css';
 /* => Fonte */
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap');
-/* => Variáveis */
-@import './_vars.css';
-/* => Gerais */
-@import './_gerais.css';
-/* => Header */
-@import './_header.css';
-/* => Home */
-@import './_home.css';
-/* => Sobre */
-@import './_sobre.css';
-/* => Serviços */
-@import './_servicos.css';
-/* => Planos */
-@import './_planos.css';
-/* => Contato */
-@import './_contato.css';
+/* Variáveis */
+:root {
+    /* Colors */
+    --color-primary: #F06E4E;
+    --color-secundary: #5BC2D9;
+    --helper-color: #00A689;
+    --bg: rgba(212, 239, 247, 0.8);
+    --border-nav: rgba(212, 239, 247, 0.4);
+    --text-primary: #001F24;
+    --box-shadow: rgba(0, 31, 36, 0.2);
+    --span: rgba(0, 31, 36, 0.5);
+
+    /* Fonte */
+    --font: 'Muli', sans-serif;
+}
+/* Estilos Gerias */
+
+body,
+button,
+input,
+select {
+    font-family: var(--font);
+}
+
+body {
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+i.icon-heading {
+    font-size: 52px;
+    color: var(--color-secundary);
+}
+
+a:hover {
+    color: inherit;
+}
+
+.text-muted {
+    color: var(--span);
+}
+
+.paragraph-span-color {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.section-heading h4 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Links */
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--text-primary);
+    transition: color 560ms;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Btns */
+.btn-customize {
+    background-color: var(--color-primary);
+    color: #FFF;
+    font-weight: 600;
+    transition: all 560ms;
+    font-size: 14px;
+}
+
+.btn-customize:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--text-primary);
+}
+
+/* Paddings */
+.section-padding {
+    padding: 100px 0;
+}
+
+.home-padding {
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    .home-padding {
+        padding-top: 130px;
+    }
+}
+
+/* Images */
+.bg-image img {
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Backgrounds */
+.bg-section {
+    background-color: var(--bg);
+}
+/* Header */
+.navbar {
+    background-color: #FFF;
+    border-bottom: 2px solid var(--border-nav);
+}
+
+.navbar.scroll {
+    box-shadow: 0px 2px 8px var(--box-shadow);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    color: var(--text-primary);
+    user-select: none;
+}
+
+.navbar-brand span {
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.link-contato {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+}
+/* Home */
+.dollar {
+    padding: 8px 10px 8px 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    letter-spacing: .58px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.dollar-icon {
+    margin: 0 5px 0 0;
+}
+
+.dollar-text {
+    margin: 2px 7px 0 0;
+    font-weight: 600;
+}
+
+.dollar-link > * {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.paragraph-home {
+    font-weight: 300;
+}
+
+.home small {
+    font-weight: 600;
+}
+/* About */
+.channel-heading h3 {
+    color: var(--color-secundary);
+}
+
+.channel-text p {
+    font-size: 14px;
+}
+/* Services */
+.service-text h5 {
+    font-size: 15px;
+}
+
+.service-text p {
+    font-size: 15px;
+}
+
+.live-heading h3 {
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.live-text p {
+    font-size: 14px;
+}
+.price-hover {
+    transition: box-shadow 560ms;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.price-hover:hover {
+    box-shadow: 0px 10px 50px var(--box-shadow);
+}
+
+.panel-plans i {
+    color: var(--color-primary);
+}
+
+.plans-text h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.plans-text p {
+    margin-bottom: 10px;
+}
+
+.price h2 {
+    color: var(--color-primary);
+    font-size: 28px;
+}
+/* Contact */
+.contact-pragraph p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.newsletter h2 {
+    font-weight: 400;
+}
+
+.newsletter form {
+    max-width: 100%;
+    width: 480px;
+    display: block;
+    margin: 0 auto;
+}
+
+.newsletter .form-control {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid var(--color-primary);
+    padding-left: 25px;
+}
