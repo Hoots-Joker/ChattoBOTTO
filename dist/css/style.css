@@ -1,7 +1,9 @@
 /* => Bootstrap */
 @import './bootstrap/bootstrap.css';
+
 /* => Fonte */
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap');
+
 /* Variáveis */
 :root {
     /* Colors */
@@ -13,6 +15,7 @@
     --text-primary: #001F24;
     --box-shadow: rgba(0, 31, 36, 0.2);
     --span: rgba(0, 31, 36, 0.5);
+    --gray: #91AAB4;
 
     /* Fonte */
     --font: 'Muli', sans-serif;
@@ -29,6 +32,15 @@ select {
 body {
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased !important;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: none !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
 }
 
 h1,
@@ -265,3 +277,31 @@ a:hover {
     border-bottom: 1px solid var(--color-primary);
     padding-left: 25px;
 }
+
+.input-newsletter {
+    border-color: var(--gray) !important;
+    transition: all 560ms;
+}
+
+.btn-newsletter {
+    background-color: var(--gray);
+    color: var(--text-primary);
+    transition: all 560ms;
+}
+
+.input-newsletter:focus {
+    border-color: var(--color-primary);
+}
+.input-newsletter.active {
+    border-color: var(--color-primary) !important;
+}
+
+.input-newsletter:focus + .input-group-append .btn-newsletter {
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+.btn-newsletter.active {
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
