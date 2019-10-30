@@ -33,4 +33,6 @@ $(function() {
         duration: 1000,
         once: true
     });
+
+    $('body').scrollspy({target: ".navbar"})
 });

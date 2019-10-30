@@ -220,17 +220,22 @@ a:hover {
 .live-text p {
     font-size: 14px;
 }
+
+/* Plans */
 .price-hover {
-    transition: box-shadow 560ms;
+    transition: all 560ms !important;
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+    top: 0;
 }
 
 .price-hover:hover {
-    box-shadow: 0px 10px 50px var(--box-shadow);
+    top: -8px;
+    box-shadow: 0px 1px 30px var(--box-shadow);
 }
 
-.panel-plans i {
+.panel-heading i {
     color: var(--color-primary);
 }
 
@@ -286,6 +291,8 @@ a:hover {
 .btn-newsletter {
     background-color: var(--gray);
     color: var(--text-primary);
+    font-weight: 600;
+    font-size: 14px;
     transition: all 560ms;
 }
 
