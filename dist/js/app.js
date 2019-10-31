@@ -54,12 +54,12 @@ $(function() {
     });
 
     $('.modal-button').on('click', function() {
-        $('main').css('filter', 'blur(15px)')
+        $('main').css('filter', 'blur(15px)');
     });
 
-    $('body, .close').on('click', function() {
-        if($('body').hasClass('modal-open')) {
-            $('main').css('filter', 'none')
+    $('.modal').on('click', (e) => {
+        if(e.target.id === 'entrar' || e.target.id === 'comeceAgora' || e.target.id === 'modalClose' || e.target.id === 'spanClose') {
+            $('main').css('filter', 'none');
         }
     });
 });
