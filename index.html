@@ -17,6 +17,83 @@
 </head>
 
 <body data-spy="scroll" data-target="#menu">
+    <!-- Modal LOGIN -->
+    <div class="modal fade" id="entrar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Entrar</h2>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="eLogin">E-mail *</label>
+                            <input type="email" class="form-control" id="eLogin" name="eLogin"
+                                placeholder="Insira o seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="eSenha">Senha *</label>
+                            <input type="password" class="form-control" id="eSenha" name="eSenha"
+                                placeholder="Insira a sua senha">
+                        </div>
+                        <input type="submit" class="btn btn-customize px-4" value="Entrar">
+                        <div class="form-check mt-2">
+                            <input type="checkbox" class="form-check-input" id="lembrarLogin">
+                            <label class="form-check-label" for="lembrarLogin">Manter-me logado</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Modal LOGIN -->
+
+    <!-- Modal COMECAR -->
+    <div class="modal fade" id="comeceAgora" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Cadastre-se, é grátis!</h2>
+                    </div>
+    
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="cNome">Nome completo *</label>
+                                <input type="email" class="form-control" id="cNome" name="cNome"
+                                    placeholder="Insira o seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="cTelefone">Telefone *</label>
+                                <input type="text" class="form-control" id="cTelefone" name="cTelefone"
+                                    placeholder="+55179999-9999">
+                            </div>
+                            <div class="form-group">
+                                <label for="cEmail">E-mail corporativo *</label>
+                                <input type="email" class="form-control" id="cEmail" name="cEmail"
+                                    placeholder="Insira o seu e-mail corporativo">
+                            </div>
+                            <div class="form-group">
+                                <label for="cSenha">Senha *</label>
+                                <input type="password" class="form-control" id="cSenha" name="cSenha"
+                                    placeholder="Insira a sua senha">
+                            </div>
+                            <p>
+                                <small class="text-muted">Ao clicar em cadastrar você estará concordando com os nossos <br> Termos de Uso.</small>
+                            </p>
+                            <input type="submit" class="btn btn-customize px-4" value="Cadastrar">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Modal COMECAR -->
+
+
+
+
     <!-- Header -->
     <header>
         <!-- Navbar -->
@@ -52,10 +129,12 @@
                             <a href="#contact" class="nav-link">Contato</a>
                         </li>
                         <li class="nav-item mt-2 mt-md-0">
-                            <a href="#" class="nav-link link-contato">Entrar</a>
+                            <a href="#" class="nav-link link-contato" data-toggle="modal"
+                                data-target="#entrar">Entrar</a>
                         </li>
                         <li class="nav-item m-0 ml-lg-3">
-                            <button class="btn btn-customize px-4" type="button">Comece agora</button>
+                            <button class="btn btn-customize px-4" type="button" data-toggle="modal"
+                            data-target="#comeceAgora">Comece agora</button>
                         </li>
                     </ul>
                 </div>
@@ -99,7 +178,8 @@
                             virtuais) com atendimento humano em diversos canais.
                         </p>
                         <div class="btn-home mt-2 mt-md-5">
-                            <button class="btn btn-customize btn-lg px-4 px-md-5" type="button">Teste grátis por 7
+                            <button class="btn btn-customize btn-lg px-4 px-md-5" type="button" data-toggle="modal"
+                            data-target="#comeceAgora">Teste grátis por 7
                                 dias</button>
                         </div>
                         <small class="text-muted">(Não é nescessário cartão de crédito)</small>
@@ -228,7 +308,8 @@
                                 </p>
                             </div>
                             <div class="btn-about">
-                                <button class="btn btn-lg btn-customize mt-0 mt-md-4 px-4 px-md-5">
+                                <button class="btn btn-lg btn-customize mt-0 mt-md-4 px-4 px-md-5" data-toggle="modal"
+                                data-target="#comeceAgora">
                                     Comece agora
                                     <i class="fas fa-arrow-right pl-1"></i>
                                 </button>
@@ -499,7 +580,9 @@
                                     <h2>R$ 149/ Mês</h2>
                                 </div>
                                 <div class="plans-button">
-                                    <button class="btn btn-customize px-4 px-md-5" type="button">Teste por 7 dias</button>
+                                    <button class="btn btn-customize px-4 px-md-5" type="button" data-toggle="modal"
+                                    data-target="#comeceAgora">Teste por 7
+                                        dias</button>
                                 </div>
                             </div>
                         </div>
@@ -523,7 +606,9 @@
                                     <h2>R$ 189/ Mês</h2>
                                 </div>
                                 <div class="plans-button">
-                                    <button class="btn btn-customize px-4 px-md-5" type="button">Teste por 7 dias</button>
+                                    <button class="btn btn-customize px-4 px-md-5" type="button" data-toggle="modal"
+                                    data-target="#comeceAgora">Teste por 7
+                                        dias</button>
                                 </div>
                             </div>
                         </div>
@@ -547,7 +632,9 @@
                                     <h2>R$ 479/ Mês</h2>
                                 </div>
                                 <div class="plans-button">
-                                    <button class="btn btn-customize px-4 px-md-5" type="button">Teste por 7 dias</button>
+                                    <button class="btn btn-customize px-4 px-md-5" type="button" data-toggle="modal"
+                                    data-target="#comeceAgora">Teste por 7
+                                        dias</button>
                                 </div>
                             </div>
                         </div>
@@ -596,7 +683,8 @@
                     <!-- / Column Form -->
 
                     <!-- Column Text -->
-                    <div class="col-12 col-md-6 order-0 order-md-1 pt-0 pt-md-5 text-center text-md-left" data-aos="fade-up-left">
+                    <div class="col-12 col-md-6 order-0 order-md-1 pt-0 pt-md-5 text-center text-md-left"
+                        data-aos="fade-up-left">
                         <!-- Heading -->
                         <div class="section-heading">
                             <h4>Contato</h4>
