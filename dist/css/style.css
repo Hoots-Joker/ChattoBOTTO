@@ -125,12 +125,12 @@ a:hover {
 }
 
 .home-padding {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 @media screen and (max-width: 767px) {
     .home-padding {
-        padding-top: 150px;
+        padding-top: 130px;
     }
 }
 
