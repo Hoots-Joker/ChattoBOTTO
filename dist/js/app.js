@@ -30,9 +30,26 @@ $(function() {
 
     // :: AOS
     AOS.init({
+        easing: 'ease',
         duration: 1000,
-        once: true
+        once: true,
+        disable: 'mobile'
     });
 
+    // :: Spy Scroll
     $('body').scrollspy({target: ".navbar"})
+
+    // :: Smooth Scroll
+    $('.navbar a').on('click', function(e) {
+        if(this.hash !== '') {
+            e.preventDefault();
+            const hash = this.hash;
+
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top
+                }, 800
+            );
+        }
+    });
 });
