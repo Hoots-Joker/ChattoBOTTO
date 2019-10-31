@@ -147,7 +147,7 @@ a:hover {
 }
 
 /* Modal */
-.modal-header h2 {
+.modal-header h4 {
     color: var(--color-primary);
 }
 

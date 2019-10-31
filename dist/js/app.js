@@ -52,4 +52,14 @@ $(function() {
             );
         }
     });
+
+    $('.modal-button').on('click', function() {
+        $('main').css('filter', 'blur(15px)')
+    });
+
+    $('body, .close').on('click', function() {
+        if($('body').hasClass('modal-open')) {
+            $('main').css('filter', 'none')
+        }
+    });
 });
