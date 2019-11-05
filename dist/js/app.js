@@ -58,8 +58,28 @@ $(function() {
     });
 
     $('.modal').on('click', (e) => {
-        if(e.target.id === 'entrar' || e.target.id === 'comeceAgora' || e.target.id === 'modalClose' || e.target.id === 'spanClose') {
+        if(e.target.id === 'entrar' || e.target.id === 'comeceAgora' || e.target.id === 'modalClose' || e.target.id === 'spanClose' || e.target.id === 'modalPlanos') {
             $('main').css('filter', 'none');
+        }
+    });
+
+    // :: Change Text Modal
+    const modalHeading = $('.modal-plan-heading h5');
+    const modalPrice = $('.modal-plan-heading h4');
+    const buttonPlans = $('.btn-plans');
+
+    const changeText = (heading, price) => {
+        modalHeading.html(heading);
+        modalPrice.html(price);
+    }
+
+    buttonPlans.on('click', function(e) {
+        if(e.target.id === 'planPro') {
+            changeText('Professional', 'R$ 149/ Mês');
+        } else if(e.target.id === 'planAdv') {
+            changeText('Advanced', 'R$ 289/ Mês');
+        } else if(e.target.id === 'planEnt') {
+            changeText('Enterprise', 'R$ 479/ Mês');
         }
     });
 });

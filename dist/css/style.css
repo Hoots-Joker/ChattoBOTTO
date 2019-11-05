@@ -104,10 +104,14 @@ a:hover {
     color: var(--color-primary);
 }
 
+.link-plans {
+    font-size: 14px;
+}
+
 /* Btns */
 .btn-customize {
     background-color: var(--color-primary);
-    color: #FFF;
+    color: #FFF !important;
     font-weight: 600;
     transition: all 560ms;
     font-size: 14px;
@@ -116,7 +120,7 @@ a:hover {
 .btn-customize:hover {
     background-color: transparent;
     border: 1px solid var(--color-primary);
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
 
 /* Paddings */
@@ -153,6 +157,16 @@ a:hover {
 
 .link-termos,
 .link-termos:hover {
+    color: var(--color-primary);
+}
+
+.modal-plan-heading h5 {
+    font-weight: 300;
+    color: var(--color-primary);
+    font-size: 26px;
+}
+
+.modal-plan-heading h4 {
     color: var(--color-primary);
 }
 

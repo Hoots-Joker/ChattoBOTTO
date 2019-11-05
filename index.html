@@ -41,10 +41,10 @@
                                 placeholder="Insira a sua senha">
                         </div>
                         <input type="submit" class="btn btn-customize px-4" value="Entrar">
-                        <div class="form-check mt-2">
+                        <!-- <div class="form-check mt-2">
                             <input type="checkbox" class="form-check-input" id="lembrarLogin">
                             <label class="form-check-label" for="lembrarLogin">Manter-me logado</label>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>
@@ -93,12 +93,106 @@
                             </small>
                         </p>
                         <input type="submit" class="btn btn-customize px-4" value="Cadastrar">
+                        <p>
+                            <small>Você irá exprimentar a versão de teste por 7 dias.</small>
+                        </p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- / Modal COMECAR -->
+
+    <!-- Modal PLANOS -->
+    <div class="modal fade" id="modalPlanos" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Aumente suas vendas</h4>
+                    <button type="button" class="close" id="modalClose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" id="spanClose">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-12 col-md-6">
+                                            <label for="cNome">Nome completo *</label>
+                                            <input type="email" class="form-control" id="cNome" name="cNome"
+                                                placeholder="Insira o seu nome completo">
+                                        </div>
+                                        <div class="form-group col-12 col-md-6">
+                                            <label for="cTelefone">Telefone *</label>
+                                            <input type="text" class="form-control" id="cTelefone" name="cTelefone"
+                                                placeholder="+55179999-9999">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cEmail">E-mail corporativo *</label>
+                                        <input type="email" class="form-control" id="cEmail" name="cEmail"
+                                            placeholder="Insira o seu e-mail corporativo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cSenha">Senha *</label>
+                                        <input type="password" class="form-control" id="cSenha" name="cSenha"
+                                            placeholder="Insira a sua senha">
+                                    </div>
+
+                                    <h5 class="border-bottom pb-2">Pagamento</h5>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-12 col-md-6">
+                                            <label for="cNomCartao">Nome do Cartão *</label>
+                                            <input type="text" class="form-control" id="cNomCartao" name="cNomCartao"
+                                                placeholder="Nome impresso no cartão">
+                                        </div>
+                                        <div class="form-group col-6 col-md-3">
+                                            <label for="cMesCartao">Mês *</label>
+                                            <input type="text" class="form-control" id="cMesCartao" name="cMesCartao"
+                                                placeholder="01-12">
+                                        </div>
+                                        <div class="form-group col-6 col-md-3">
+                                            <label for="cAnoCartao">Ano *</label>
+                                            <input type="text" class="form-control" id="cAnoCartao" name="cAnoCartao"
+                                                placeholder="2019-2026">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row pb-3 border-bottom">
+                                        <div class="form-group col-12 col-md-6">
+                                            <label for="cNumCartao">Número do Cartão *</label>
+                                            <input type="text" class="form-control" id="cNumCartao" name="cNumCartao"
+                                                placeholder="5555 5555 5555 5555">
+                                        </div>
+                                        <div class="form-group col-12 col-md-6">
+                                            <label for="cCodCartao">Código de segurança *</label>
+                                            <input type="text" class="form-control" id="cCodCartao" name="cCodCartao"
+                                                placeholder="XXX">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row pt-3">
+                                        <input type="submit" class="btn btn-customize px-5 px-md-4" value="Realizar Compra">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-3 border-left">
+                                <div class="modal-plan-heading">
+                                    <h5></h5>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Modal PLANOS -->
 
 
 
@@ -143,7 +237,7 @@
                         </li>
                         <li class="nav-item m-0 ml-lg-3">
                             <button class="btn btn-customize px-4 modal-button" type="button" data-toggle="modal"
-                                data-target="#comeceAgora">Comece agora</button>
+                                data-target="#comeceAgora">Cadastrar</button>
                         </li>
                     </ul>
                 </div>
@@ -588,10 +682,12 @@
                                 <div class="price mt-5">
                                     <h2>R$ 149/ Mês</h2>
                                 </div>
-                                <div class="plans-button">
-                                    <button class="btn btn-customize px-4 px-md-5 modal-button" type="button" data-toggle="modal"
-                                        data-target="#comeceAgora">Teste por 7
-                                        dias</button>
+                                <div class="plans-button mt-5">
+                                    <button id="planPro" class="btn btn-customize btn-plans px-4 px-md-5 modal-button" type="button" data-toggle="modal" data-target="#modalPlanos">
+                                        Comprar
+                                    </button>
+                                    <a href="#" data-toggle="modal" class="link-termos link-plans d-block modal-button"
+                                    data-target="#comeceAgora">Teste grátis por 7 dias</a>
                                 </div>
                             </div>
                         </div>
@@ -612,12 +708,14 @@
                                     <p class="text-muted">e muito mais!</p>
                                 </div>
                                 <div class="price mt-5">
-                                    <h2>R$ 189/ Mês</h2>
+                                    <h2>R$ 289/ Mês</h2>
                                 </div>
-                                <div class="plans-button">
-                                    <button class="btn btn-customize px-4 px-md-5 modal-button" type="button" data-toggle="modal"
-                                        data-target="#comeceAgora">Teste por 7
-                                        dias</button>
+                                <div class="plans-button mt-5">
+                                    <button id="planAdv" class="btn btn-customize btn-plans px-4 px-md-5 modal-button" type="button" data-toggle="modal" data-target="#modalPlanos">
+                                        Comprar
+                                    </button>
+                                    <a href="#" data-toggle="modal" class="link-termos link-plans d-block modal-button"
+                                    data-target="#comeceAgora">Teste grátis por 7 dias</a>
                                 </div>
                             </div>
                         </div>
@@ -640,10 +738,12 @@
                                 <div class="price mt-5">
                                     <h2>R$ 479/ Mês</h2>
                                 </div>
-                                <div class="plans-button">
-                                    <button class="btn btn-customize px-4 px-md-5 modal-button" type="button" data-toggle="modal"
-                                        data-target="#comeceAgora">Teste por 7
-                                        dias</button>
+                                <div class="plans-button mt-5">
+                                    <button id="planEnt" class="btn btn-customize btn-plans px-4 px-md-5 modal-button" type="button" data-toggle="modal" data-target="#modalPlanos">
+                                        Comprar
+                                    </button>
+                                    <a href="#" data-toggle="modal" class="link-termos link-plans d-block modal-button"
+                                    data-target="#comeceAgora">Teste grátis por 7 dias</a>
                                 </div>
                             </div>
                         </div>
