@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>ChatoBOTTO</title>
+    <title>ChattoBOTTO</title>
 
     <!-- CDN Icones -->
     <script src="https://kit.fontawesome.com/12705e95f9.js" crossorigin="anonymous"></script>
@@ -29,16 +29,16 @@
                 </div>
 
                 <div class="modal-body">
-                    <form>
+                    <form action="dashboard.html">
                         <div class="form-group">
                             <label for="eLogin">E-mail *</label>
                             <input type="email" class="form-control" id="eLogin" name="eLogin"
-                                placeholder="Insira o seu e-mail">
+                                placeholder="Insira o seu e-mail" required>
                         </div>
                         <div class="form-group">
                             <label for="eSenha">Senha *</label>
                             <input type="password" class="form-control" id="eSenha" name="eSenha"
-                                placeholder="Insira a sua senha">
+                                placeholder="Insira a sua senha" required>
                         </div>
                         <input type="submit" class="btn btn-customize px-4" value="Entrar">
                         <!-- <div class="form-check mt-2">
@@ -68,22 +68,22 @@
                         <div class="form-group">
                             <label for="cNome">Nome completo *</label>
                             <input type="email" class="form-control" id="cNome" name="cNome"
-                                placeholder="Insira o seu nome completo">
+                                placeholder="Insira o seu nome completo" required>
                         </div>
                         <div class="form-group">
                             <label for="cTelefone">Telefone *</label>
                             <input type="text" class="form-control" id="cTelefone" name="cTelefone"
-                                placeholder="+55179999-9999">
+                                placeholder="+55179999-9999" required>
                         </div>
                         <div class="form-group">
                             <label for="cEmail">E-mail corporativo *</label>
                             <input type="email" class="form-control" id="cEmail" name="cEmail"
-                                placeholder="Insira o seu e-mail corporativo">
+                                placeholder="Insira o seu e-mail corporativo" required>
                         </div>
                         <div class="form-group">
                             <label for="cSenha">Senha *</label>
                             <input type="password" class="form-control" id="cSenha" name="cSenha"
-                                placeholder="Insira a sua senha">
+                                placeholder="Insira a sua senha" required>
                         </div>
                         <p>
                             <small class="text-muted">
@@ -117,29 +117,29 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-md-9">
-                                <form action="">
+                            <div class="col-12 col-md-9 order-1 order-md-0">
+                                <form action="dashboard.html">
                                     <div class="form-row">
                                         <div class="form-group col-12 col-md-6">
                                             <label for="cNome">Nome completo *</label>
                                             <input type="email" class="form-control" id="cNome" name="cNome"
-                                                placeholder="Insira o seu nome completo">
+                                                placeholder="Insira o seu nome completo" required>
                                         </div>
                                         <div class="form-group col-12 col-md-6">
                                             <label for="cTelefone">Telefone *</label>
                                             <input type="text" class="form-control" id="cTelefone" name="cTelefone"
-                                                placeholder="+55179999-9999">
+                                                placeholder="+55179999-9999" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="cEmail">E-mail corporativo *</label>
                                         <input type="email" class="form-control" id="cEmail" name="cEmail"
-                                            placeholder="Insira o seu e-mail corporativo">
+                                            placeholder="Insira o seu e-mail corporativo" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="cSenha">Senha *</label>
                                         <input type="password" class="form-control" id="cSenha" name="cSenha"
-                                            placeholder="Insira a sua senha">
+                                            placeholder="Insira a sua senha" required>
                                     </div>
 
                                     <h5 class="border-bottom pb-2">Pagamento</h5>
@@ -148,17 +148,17 @@
                                         <div class="form-group col-12 col-md-6">
                                             <label for="cNomCartao">Nome do Cartão *</label>
                                             <input type="text" class="form-control" id="cNomCartao" name="cNomCartao"
-                                                placeholder="Nome impresso no cartão">
+                                                placeholder="Nome impresso no cartão" required>
                                         </div>
                                         <div class="form-group col-6 col-md-3">
                                             <label for="cMesCartao">Mês *</label>
                                             <input type="text" class="form-control" id="cMesCartao" name="cMesCartao"
-                                                placeholder="01-12">
+                                                placeholder="01-12" required>
                                         </div>
                                         <div class="form-group col-6 col-md-3">
                                             <label for="cAnoCartao">Ano *</label>
                                             <input type="text" class="form-control" id="cAnoCartao" name="cAnoCartao"
-                                                placeholder="2019-2026">
+                                                placeholder="2019-2026" required>
                                         </div>
                                     </div>
 
@@ -166,21 +166,22 @@
                                         <div class="form-group col-12 col-md-6">
                                             <label for="cNumCartao">Número do Cartão *</label>
                                             <input type="text" class="form-control" id="cNumCartao" name="cNumCartao"
-                                                placeholder="5555 5555 5555 5555">
+                                                placeholder="5555 5555 5555 5555" required>
                                         </div>
                                         <div class="form-group col-12 col-md-6">
                                             <label for="cCodCartao">Código de segurança *</label>
                                             <input type="text" class="form-control" id="cCodCartao" name="cCodCartao"
-                                                placeholder="XXX">
+                                                placeholder="XXX" required>
                                         </div>
                                     </div>
 
                                     <div class="form-row pt-3">
-                                        <input type="submit" class="btn btn-customize px-5 px-md-4" value="Realizar Compra">
+                                        <input type="submit" class="btn btn-customize px-5 px-md-4"
+                                            value="Realizar Compra">
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-12 col-md-3 border-left">
+                            <div class="col-12 col-md-3 order-0 order-md-1 mb-3 mb-md-0">
                                 <div class="modal-plan-heading">
                                     <h5></h5>
                                     <h4></h4>
@@ -281,8 +282,8 @@
                             virtuais) com atendimento humano em diversos canais.
                         </p>
                         <div class="btn-home mt-2 mt-md-5">
-                            <button class="btn btn-customize btn-lg px-4 px-md-5 modal-button" type="button" data-toggle="modal"
-                                data-target="#comeceAgora">Teste grátis por 7
+                            <button class="btn btn-customize btn-lg px-4 px-md-5 modal-button" type="button"
+                                data-toggle="modal" data-target="#comeceAgora">Teste grátis por 7
                                 dias</button>
                         </div>
                         <small class="text-muted">(Não é nescessário cartão de crédito)</small>
@@ -411,8 +412,8 @@
                                 </p>
                             </div>
                             <div class="btn-about">
-                                <button class="btn btn-lg btn-customize mt-0 mt-md-4 px-4 px-md-5 modal-button" data-toggle="modal"
-                                    data-target="#comeceAgora">
+                                <button class="btn btn-lg btn-customize mt-0 mt-md-4 px-4 px-md-5 modal-button"
+                                    data-toggle="modal" data-target="#comeceAgora">
                                     Comece agora
                                     <i class="fas fa-arrow-right pl-1"></i>
                                 </button>
@@ -683,11 +684,12 @@
                                     <h2>R$ 149/ Mês</h2>
                                 </div>
                                 <div class="plans-button mt-5">
-                                    <button id="planPro" class="btn btn-customize btn-plans px-4 px-md-5 modal-button" type="button" data-toggle="modal" data-target="#modalPlanos">
+                                    <button id="planPro" class="btn btn-customize btn-plans px-4 px-md-5 modal-button"
+                                        type="button" data-toggle="modal" data-target="#modalPlanos">
                                         Comprar
                                     </button>
                                     <a href="#" data-toggle="modal" class="link-termos link-plans d-block modal-button"
-                                    data-target="#comeceAgora">Teste grátis por 7 dias</a>
+                                        data-target="#comeceAgora">Teste grátis por 7 dias</a>
                                 </div>
                             </div>
                         </div>
@@ -711,11 +713,12 @@
                                     <h2>R$ 289/ Mês</h2>
                                 </div>
                                 <div class="plans-button mt-5">
-                                    <button id="planAdv" class="btn btn-customize btn-plans px-4 px-md-5 modal-button" type="button" data-toggle="modal" data-target="#modalPlanos">
+                                    <button id="planAdv" class="btn btn-customize btn-plans px-4 px-md-5 modal-button"
+                                        type="button" data-toggle="modal" data-target="#modalPlanos">
                                         Comprar
                                     </button>
                                     <a href="#" data-toggle="modal" class="link-termos link-plans d-block modal-button"
-                                    data-target="#comeceAgora">Teste grátis por 7 dias</a>
+                                        data-target="#comeceAgora">Teste grátis por 7 dias</a>
                                 </div>
                             </div>
                         </div>
@@ -739,11 +742,12 @@
                                     <h2>R$ 479/ Mês</h2>
                                 </div>
                                 <div class="plans-button mt-5">
-                                    <button id="planEnt" class="btn btn-customize btn-plans px-4 px-md-5 modal-button" type="button" data-toggle="modal" data-target="#modalPlanos">
+                                    <button id="planEnt" class="btn btn-customize btn-plans px-4 px-md-5 modal-button"
+                                        type="button" data-toggle="modal" data-target="#modalPlanos">
                                         Comprar
                                     </button>
                                     <a href="#" data-toggle="modal" class="link-termos link-plans d-block modal-button"
-                                    data-target="#comeceAgora">Teste grátis por 7 dias</a>
+                                        data-target="#comeceAgora">Teste grátis por 7 dias</a>
                                 </div>
                             </div>
                         </div>
